@@ -1,0 +1,126 @@
+.dashboard-layout {
+  display: flex;
+}
+
+/* Contenido principal */
+.dashboard-layout .contenido {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor del mapa */
+.mapa-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 2rem;
+  position: relative;
+}
+
+/* Estilo del mapa Leaflet */
+.leaflet-container {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  z-index: 0;
+}
+
+/* Leyenda de colores */
+.map-legend {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  border: 1px solid #bbb;
+}
+
+/* Panel de datos del país */
+.datos-pais {
+  margin-top: 2rem;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 16px 20px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.datos-pais h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.datos-pais ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.5rem 0 1rem;
+}
+
+.datos-pais li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.btn-limpiar {
+  background: #FF7F11;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+.btn-limpiar:hover {
+  background: #e56f0f;
+}
+
+@media (max-width: 768px) {
+
+  .dashboard-layout .contenido {
+    padding: 1rem;
+  }
+
+  .mapa-container {
+    margin-top: 1rem;
+  }
+
+  .leaflet-container {
+    height: 320px;
+  }
+
+  .datos-pais {
+    padding: 12px;
+    width: 100%;
+  }
+
+  .datos-pais h3 {
+    font-size: 1rem;
+  }
+}

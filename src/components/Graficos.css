@@ -1,0 +1,158 @@
+/* Gráficos */
+.graficos {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.grafico {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.grafico h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+
+.graficos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.leaflet-container {
+  height: 300px;
+  width: 100%;
+  z-index: 0;
+}
+
+/* Vista social */
+.descripcion-social {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 1rem;
+  font-family: Poppins;
+}
+
+.perfil-social {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.perfil-social ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.perfil-social li {
+  margin-bottom: 0.5rem;
+}
+
+/* Tabla social */
+.tabla-social {
+  margin-bottom: 2rem;
+  font-family: Poppins;
+}
+
+.tabla-social table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-social th,
+.tabla-social td {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  text-align: left;
+  font-family: Poppins;
+}
+
+.tabla-social th {
+  background-color: #f7c948;
+  color: #333;
+  font-weight: 600;
+}
+
+.tabla-social td {
+  background-color: #fffbea;
+}
+
+/* Global fix */
+* {
+  box-sizing: border-box;
+}
+
+.grafico.mapa-expandido {
+  grid-column: 1 / -1;
+}
+
+/* Leyenda del mapa */
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-family: Poppins;
+  font-size: 0.9rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legend-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #999;
+}
+
+.recharts-text {
+  font-family: Poppins;
+  font-size: 0.9rem;
+  fill: #333;
+}
+
+.recharts-tooltip-label {
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+
+  .graficos {
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .graficos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grafico {
+    padding: 1rem;
+  }
+
+  .leaflet-container {
+    height: 250px;
+  }
+
+  .tabla-social th,
+  .tabla-social td {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+}
