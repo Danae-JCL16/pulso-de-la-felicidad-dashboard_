@@ -7,7 +7,7 @@ function MenuLateral() {
     <div className="menu_dashboard">
         <div className="iconos">
             <Link to="/">
-                <img src="https://github.com/Danae-JCL16/pulso-de-la-felicidad-dashboard_/blob/main/public/icono1.PNG" alt="Inicio" className="icono_tamaño" />
+                <img src="~/public/icono1.png" alt="Inicio" className="icono_tamaño" />
                 </Link>
             <Link to="/mapa">
                 <img src="/icono2.png" alt="Mapa mundial" className="icono_tamaño"/>
